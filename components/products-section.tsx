@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button"
-import { Check, Star, ArrowRight } from "lucide-react"
+import { Check, Star, ArrowRight, Percent } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
-import Link from "next/link"
 
 export function ProductsSection() {
   const ebookFeatures = [
@@ -22,7 +21,11 @@ export function ProductsSection() {
     <section id="produtos" className="py-12 md:py-16 bg-secondary/50 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-10">
-          <span className="text-xs uppercase tracking-widest text-primary font-medium">Produtos</span>
+          <Badge className="bg-red-500 text-white text-sm mb-3">
+            <Percent className="w-4 h-4 mr-1" />
+            50% OFF - Promoção por tempo limitado!
+          </Badge>
+          <span className="text-xs uppercase tracking-widest text-primary font-medium block">Produtos</span>
           <h2 className="font-serif text-2xl md:text-3xl font-medium mt-3 mb-4 text-balance">
             O corpo e a energia que você quer começam aqui
           </h2>
@@ -33,10 +36,11 @@ export function ProductsSection() {
 
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           <div className="bg-card rounded-2xl border border-border p-6 flex flex-col relative">
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex gap-2">
               <Badge variant="secondary" className="bg-secondary text-secondary-foreground text-xs">
                 Mais Vendido
               </Badge>
+              <Badge className="bg-red-500 text-white text-xs">50% OFF</Badge>
             </div>
 
             <div className="mb-4 mt-1">
@@ -45,11 +49,7 @@ export function ProductsSection() {
             </div>
 
             <div className="aspect-[16/9] rounded-xl overflow-hidden bg-muted mb-4">
-              <img
-                src="/ebook-cover-menopausa-fitness-recipes-healthy-food.jpg"
-                alt="Ebook Menopausa no Shape"
-                className="w-full h-full object-cover"
-              />
+              <img src="/ebook-cover.png" alt="Ebook Menopausa no Shape" className="w-full h-full object-cover" />
             </div>
 
             <ul className="space-y-2 mb-6 flex-grow">
@@ -63,24 +63,26 @@ export function ProductsSection() {
 
             <div className="border-t border-border pt-4">
               <div className="flex items-baseline gap-2 mb-3">
+                <span className="text-lg line-through text-muted-foreground">R$ 94</span>
                 <span className="font-serif text-3xl font-semibold text-card-foreground">R$ 47</span>
               </div>
               <Button asChild className="w-full bg-foreground hover:bg-foreground/90 text-background" size="default">
-                <Link href="/ebook-menopausa-no-shape">
+                <a href="https://go.hotmart.com/W98163119E" target="_blank" rel="noopener noreferrer">
                   Quero o Ebook Agora
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+                </a>
               </Button>
               <p className="text-xs text-center text-muted-foreground mt-2">Pagamento único • Acesso imediato</p>
             </div>
           </div>
 
           <div className="bg-card rounded-2xl border-2 border-primary p-6 flex flex-col relative">
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex gap-2">
               <Badge className="bg-primary text-primary-foreground text-xs">
                 <Star className="w-3 h-3 mr-1 fill-current" />
                 Mais Completo
               </Badge>
+              <Badge className="bg-red-500 text-white text-xs">50% OFF</Badge>
             </div>
 
             <div className="mb-4 mt-1">
@@ -89,11 +91,7 @@ export function ProductsSection() {
             </div>
 
             <div className="aspect-[16/9] rounded-xl overflow-hidden bg-muted mb-4">
-              <img
-                src="/online-course-nutrition-women-menopause-health-tra.jpg"
-                alt="Curso Equilibbra"
-                className="w-full h-full object-cover"
-              />
+              <img src="/equilibbra-cover.png" alt="Curso Equilibbra" className="w-full h-full object-cover" />
             </div>
 
             <ul className="space-y-2 mb-6 flex-grow">
@@ -111,10 +109,10 @@ export function ProductsSection() {
               </div>
               <p className="text-xs text-muted-foreground mb-3">Vagas limitadas por turma</p>
               <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" size="default">
-                <Link href="/curso-equilibbra">
+                <a href="https://pay.hotmart.com/I102693657L" target="_blank" rel="noopener noreferrer">
                   Quero Saber Mais
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+                </a>
               </Button>
               <p className="text-xs text-center text-muted-foreground mt-2">Garantia de 7 dias • Suporte completo</p>
             </div>
