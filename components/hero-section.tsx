@@ -87,7 +87,7 @@ export function HeroSection() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute top-4 -left-4 md:top-6 md:-left-6 bg-card p-4 md:p-6 rounded-lg md:rounded-xl shadow-lg border border-border max-w-xs">
+            <div className="absolute bottom-4 -right-4 md:bottom-6 md:-right-6 bg-card p-4 md:p-6 rounded-lg md:rounded-xl shadow-lg border border-border max-w-xs">
               <p className="font-serif text-xl md:text-2xl font-semibold text-foreground">-30kg</p>
               <p className="text-xs md:text-sm text-muted-foreground">sem reposição hormonal, na menopausa</p>
             </div>
