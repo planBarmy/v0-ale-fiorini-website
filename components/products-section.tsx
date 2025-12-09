@@ -11,7 +11,6 @@ export function ProductsSection() {
   ]
 
   const cursoFeatures = [
-    "Dieta 100% personalizada para seu metabolismo",
     "Estratégias para perda de peso sustentável",
     "Acompanhamento e suporte completo",
     "Ebook Menopausa no Shape incluso",
@@ -36,16 +35,17 @@ export function ProductsSection() {
 
         <div className="grid md:grid-cols-2 gap-4 md:gap-6 max-w-5xl mx-auto">
           <div className="bg-card rounded-xl md:rounded-2xl border border-border p-4 md:p-6 flex flex-col relative">
-            <div className="absolute -top-2 md:-top-3 left-1/2 -translate-x-1/2 flex gap-1 md:gap-2">
+            <div className="absolute -top-2 md:-top-3 left-1/2 -translate-x-1/2">
               <Badge variant="secondary" className="bg-secondary text-secondary-foreground text-xs">
                 Mais Vendido
               </Badge>
-              <Badge className="bg-red-500 text-white text-xs">50% OFF</Badge>
             </div>
 
             <div className="mb-3 md:mb-4 mt-1">
               <h3 className="font-serif text-lg md:text-xl font-medium text-card-foreground">Menopausa no Shape</h3>
-              <p className="text-xs md:text-sm text-muted-foreground mt-1">O E-book que está transformando mulheres 40+</p>
+              <p className="text-xs md:text-sm text-muted-foreground mt-1">
+                O E-book que está transformando mulheres 40+
+              </p>
             </div>
 
             <div className="aspect-[16/9] rounded-lg md:rounded-xl overflow-hidden bg-muted mb-3 md:mb-4">
@@ -63,10 +63,13 @@ export function ProductsSection() {
 
             <div className="border-t border-border pt-3 md:pt-4">
               <div className="flex items-baseline gap-2 mb-2 md:mb-3">
-                <span className="text-base md:text-lg line-through text-muted-foreground">R$ 94</span>
-                <span className="font-serif text-2xl md:text-3xl font-semibold text-card-foreground">R$ 47</span>
+                <span className="font-serif text-2xl md:text-3xl font-semibold text-card-foreground">R$ 87</span>
               </div>
-              <Button asChild className="w-full bg-foreground hover:bg-foreground/90 text-background text-sm md:text-base" size="default">
+              <Button
+                asChild
+                className="w-full bg-foreground hover:bg-foreground/90 text-background text-sm md:text-base"
+                size="default"
+              >
                 <a href="https://go.hotmart.com/W98163119E" target="_blank" rel="noopener noreferrer">
                   Quero o Ebook Agora
                   <ArrowRight className="ml-2 h-3.5 w-3.5 md:h-4 md:w-4" />
@@ -87,11 +90,13 @@ export function ProductsSection() {
 
             <div className="mb-3 md:mb-4 mt-1">
               <h3 className="font-serif text-lg md:text-xl font-medium text-card-foreground">Curso Equilibbra</h3>
-              <p className="text-xs md:text-sm text-muted-foreground mt-1">Dieta 100% personalizada para seu metabolismo</p>
+              <p className="text-xs md:text-sm text-muted-foreground mt-1">
+                Dieta 100% personalizada para seu metabolismo
+              </p>
             </div>
 
             <div className="aspect-[16/9] rounded-lg md:rounded-xl overflow-hidden bg-muted mb-3 md:mb-4">
-              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/equilibbra-SxSori5gDI8kniDY61OXNGzqqwWXgI.png" alt="Curso Equilibbra" className="w-full h-full object-cover" />
+              <img src="/images/equilibbra.png" alt="Curso Equilibbra" className="w-full h-full object-cover" />
             </div>
 
             <ul className="space-y-1.5 md:space-y-2 mb-4 md:mb-6 flex-grow">
@@ -108,7 +113,11 @@ export function ProductsSection() {
                 <span className="font-serif text-2xl md:text-3xl font-semibold text-card-foreground">Consulte</span>
               </div>
               <p className="text-xs text-muted-foreground mb-2 md:mb-3">Vagas limitadas por turma</p>
-              <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground text-sm md:text-base" size="default">
+              <Button
+                asChild
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground text-sm md:text-base"
+                size="default"
+              >
                 <a href="https://pay.hotmart.com/I102693657L" target="_blank" rel="noopener noreferrer">
                   Quero Saber Mais
                   <ArrowRight className="ml-2 h-3.5 w-3.5 md:h-4 md:w-4" />
