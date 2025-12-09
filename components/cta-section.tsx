@@ -28,16 +28,6 @@ export function CtaSection() {
                 <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
               </Link>
             </Button>
-            <Button
-              asChild
-              size="default"
-              variant="outline"
-              className="border-background/30 text-background hover:bg-background/10 text-sm md:text-base px-6 md:px-8 bg-transparent"
-            >
-              <a href="https://go.hotmart.com/W98163119E" target="_blank" rel="noopener noreferrer">
-                Começar com o Ebook - R$47
-              </a>
-            </Button>
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 md:gap-6">
