@@ -91,7 +91,7 @@ export function ProductsSection() {
             </div>
 
             <div className="aspect-[16/9] rounded-lg md:rounded-xl overflow-hidden bg-muted mb-3 md:mb-4">
-              <img src="/equilibbra-cover.png" alt="Curso Equilibbra" className="w-full h-full object-cover" />
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/equilibbra-SxSori5gDI8kniDY61OXNGzqqwWXgI.png" alt="Curso Equilibbra" className="w-full h-full object-cover" />
             </div>
 
             <ul className="space-y-1.5 md:space-y-2 mb-4 md:mb-6 flex-grow">
