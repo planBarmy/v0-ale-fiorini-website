@@ -23,8 +23,8 @@ export function CtaSection() {
 
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-6 md:mb-8">
             <Button asChild size="default" className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm md:text-base px-6 md:px-8">
-              <Link href="/curso-equilibbra">
-                Quero o Curso Equilibbra
+              <Link href="#produtos">
+                Conhecer os Cursos
                 <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
               </Link>
             </Button>

@@ -34,7 +34,7 @@ export function Header() {
               FAQ
             </Link>
             <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              <Link href="/curso-equilibbra">Quero Começar</Link>
+              <Link href="#produtos">Quero Começar</Link>
             </Button>
           </nav>
 
@@ -77,7 +77,7 @@ export function Header() {
                 FAQ
               </Link>
               <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
-                <Link href="/curso-equilibbra">Quero Começar</Link>
+                <Link href="#produtos">Quero Começar</Link>
               </Button>
             </div>
           </nav>

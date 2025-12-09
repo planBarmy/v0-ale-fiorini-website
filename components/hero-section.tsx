@@ -46,13 +46,10 @@ export function HeroSection() {
                 size="default"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm md:text-base px-6 md:px-8"
               >
-                <Link href="/curso-equilibbra">
-                  Quero Transformar Meu Corpo
+                <Link href="#produtos">
+                  Conhecer os Cursos
                   <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                 </Link>
-              </Button>
-              <Button asChild size="default" variant="outline" className="text-sm md:text-base px-6 md:px-8 bg-transparent">
-                <Link href="#produtos">Conhecer os Cursos</Link>
               </Button>
             </div>
 
@@ -90,7 +87,7 @@ export function HeroSection() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 bg-card p-4 md:p-6 rounded-lg md:rounded-xl shadow-lg border border-border max-w-xs">
+            <div className="absolute top-4 -left-4 md:top-6 md:-left-6 bg-card p-4 md:p-6 rounded-lg md:rounded-xl shadow-lg border border-border max-w-xs">
               <p className="font-serif text-xl md:text-2xl font-semibold text-foreground">-30kg</p>
               <p className="text-xs md:text-sm text-muted-foreground">sem reposição hormonal, na menopausa</p>
             </div>
