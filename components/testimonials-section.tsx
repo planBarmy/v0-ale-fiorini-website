@@ -33,33 +33,33 @@ export function TestimonialsSection() {
   ]
 
   return (
-    <section id="depoimentos" className="py-16 md:py-24 px-4">
+    <section id="depoimentos" className="py-10 md:py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
           <span className="text-xs uppercase tracking-widest text-primary font-medium">Resultados Reais</span>
-          <h2 className="font-serif text-3xl md:text-4xl font-medium mt-4 mb-6 text-balance">
+          <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-medium mt-3 md:mt-4 mb-4 md:mb-6 text-balance">
             Mulheres 40+ que transformaram seus corpos
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base md:text-lg text-muted-foreground">
             Histórias reais de quem seguiu o método e conquistou resultados
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-card rounded-xl border border-border p-6 flex flex-col">
-              <Quote className="w-8 h-8 text-primary/20 mb-4" />
+            <div key={index} className="bg-card rounded-xl border border-border p-4 md:p-6 flex flex-col">
+              <Quote className="w-6 h-6 md:w-8 md:h-8 text-primary/20 mb-3 md:mb-4" />
 
-              <p className="text-sm text-muted-foreground leading-relaxed flex-grow mb-6">"{testimonial.text}"</p>
+              <p className="text-xs md:text-sm text-muted-foreground leading-relaxed flex-grow mb-4 md:mb-6">"{testimonial.text}"</p>
 
-              <div className="flex items-center gap-1 mb-3">
+              <div className="flex items-center gap-0.5 md:gap-1 mb-2 md:mb-3">
                 {Array.from({ length: testimonial.rating }).map((_, i) => (
-                  <Star key={i} className="w-4 h-4 text-yellow-500 fill-current" />
+                  <Star key={i} className="w-3.5 h-3.5 md:w-4 md:h-4 text-yellow-500 fill-current" />
                 ))}
               </div>
 
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-muted overflow-hidden">
+              <div className="flex items-center gap-2 md:gap-3">
+                <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-muted overflow-hidden">
                   <img
                     src={testimonial.avatar || "/placeholder.svg"}
                     alt={testimonial.name}
@@ -67,7 +67,7 @@ export function TestimonialsSection() {
                   />
                 </div>
                 <div>
-                  <p className="font-medium text-sm text-card-foreground">{testimonial.name}</p>
+                  <p className="font-medium text-xs md:text-sm text-card-foreground">{testimonial.name}</p>
                   <p className="text-xs text-muted-foreground">{testimonial.location}</p>
                 </div>
               </div>

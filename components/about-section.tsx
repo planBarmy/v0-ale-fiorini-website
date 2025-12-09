@@ -8,21 +8,21 @@ export function AboutSection() {
   ]
 
   return (
-    <section id="sobre" className="py-16 md:py-24 px-4">
+    <section id="sobre" className="py-10 md:py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-10 items-center">
           <div className="relative order-2 lg:order-1">
-            <div className="aspect-square rounded-2xl overflow-hidden bg-muted">
+            <div className="aspect-square rounded-xl md:rounded-2xl overflow-hidden bg-muted">
               <img src="/ale-about.jpeg" alt="Ale Fiorini" className="w-full h-full object-cover" />
             </div>
           </div>
 
-          <div className="space-y-6 order-1 lg:order-2">
+          <div className="space-y-4 md:space-y-5 order-1 lg:order-2">
             <span className="text-xs uppercase tracking-widest text-primary font-medium">Minha História</span>
 
-            <h2 className="font-serif text-3xl md:text-4xl font-medium text-balance">Prazer, eu sou a Ale Fiorini</h2>
+            <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-medium text-balance">Prazer, eu sou a Ale Fiorini</h2>
 
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <div className="space-y-3 md:space-y-4 text-sm md:text-base text-muted-foreground leading-relaxed">
               <p>
                 Sou Nutri & Trainer, tenho <strong className="text-foreground">55 anos</strong>, sou{" "}
                 <strong className="text-foreground">mastectomizada</strong>, estou na{" "}
@@ -41,11 +41,11 @@ export function AboutSection() {
               <p className="text-primary font-medium">A menopausa não é o fim. É o começo de uma nova você.</p>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 pt-6">
+            <div className="grid grid-cols-3 gap-3 md:gap-4 pt-4 md:pt-6">
               {stats.map((stat, index) => (
-                <div key={index} className="text-center p-4 bg-secondary rounded-lg">
-                  <stat.icon className="w-6 h-6 text-primary mx-auto mb-2" />
-                  <p className="font-serif text-2xl font-semibold text-foreground">{stat.value}</p>
+                <div key={index} className="text-center p-3 md:p-4 bg-secondary rounded-lg">
+                  <stat.icon className="w-5 h-5 md:w-6 md:h-6 text-primary mx-auto mb-2" />
+                  <p className="font-serif text-xl md:text-2xl font-semibold text-foreground">{stat.value}</p>
                   <p className="text-xs text-muted-foreground">{stat.label}</p>
                 </div>
               ))}
