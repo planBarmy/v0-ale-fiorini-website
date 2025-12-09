@@ -34,7 +34,9 @@ export function CtaSection() {
               variant="outline"
               className="border-background/30 text-background hover:bg-background/10 text-sm md:text-base px-6 md:px-8 bg-transparent"
             >
-              <Link href="/ebook-menopausa-no-shape">Começar com o Ebook - R$47</Link>
+              <a href="https://go.hotmart.com/W98163119E" target="_blank" rel="noopener noreferrer">
+                Começar com o Ebook - R$47
+              </a>
             </Button>
           </div>
 
